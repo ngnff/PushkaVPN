@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240658952A59A892000AB645 /* PushkaVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658942A59A892000AB645 /* PushkaVPNApp.swift */; };
+		240658992A59A894000AB645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240658982A59A894000AB645 /* Assets.xcassets */; };
+		2406589C2A59A894000AB645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2406589B2A59A894000AB645 /* Preview Assets.xcassets */; };
+		240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A22A59AA15000AB645 /* LaunchScreen.swift */; };
+		240658A92A59ADCD000AB645 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A82A59ADCD000AB645 /* SignIn.swift */; };
+		24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */; };
+		24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878CA2A5AE156001DA5DF /* SignUp.swift */; };
+		24C878CF2A5AF1B7001DA5DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */; };
+		24C878D22A5AF2AA001DA5DF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 24C878D12A5AF2AA001DA5DF /* FirebaseAnalytics */; };
+		24C878D42A5AF2AA001DA5DF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 24C878D32A5AF2AA001DA5DF /* FirebaseAuth */; };
+		24C878D62A5AF3AD001DA5DF /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878D52A5AF3AD001DA5DF /* Authentication.swift */; };
+		24C878DA2A5B1155001DA5DF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878D92A5B1155001DA5DF /* MainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		240658912A59A892000AB645 /* PushkaVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushkaVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		240658942A59A892000AB645 /* PushkaVPNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushkaVPNApp.swift; sourceTree = "<group>"; };
+		240658982A59A894000AB645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2406589B2A59A894000AB645 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		240658A22A59AA15000AB645 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		240658A82A59ADCD000AB645 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		240658AA2A59B2D0000AB645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLogo.swift; sourceTree = "<group>"; };
+		24C878CA2A5AE156001DA5DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24C878D52A5AF3AD001DA5DF /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		24C878D92A5B1155001DA5DF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2406588E2A59A892000AB645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C878D22A5AF2AA001DA5DF /* FirebaseAnalytics in Frameworks */,
+				24C878D42A5AF2AA001DA5DF /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240658882A59A892000AB645 = {
+			isa = PBXGroup;
+			children = (
+				240658932A59A892000AB645 /* PushkaVPN */,
+				240658922A59A892000AB645 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		240658922A59A892000AB645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				240658912A59A892000AB645 /* PushkaVPN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		240658932A59A892000AB645 /* PushkaVPN */ = {
+			isa = PBXGroup;
+			children = (
+				240658942A59A892000AB645 /* PushkaVPNApp.swift */,
+				24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */,
+				240658AA2A59B2D0000AB645 /* Info.plist */,
+				240658A72A59AD9B000AB645 /* ViewModel */,
+				240658A62A59AAB2000AB645 /* Model */,
+				240658A52A59AAA7000AB645 /* View */,
+				240658982A59A894000AB645 /* Assets.xcassets */,
+				2406589A2A59A894000AB645 /* Preview Content */,
+			);
+			path = PushkaVPN;
+			sourceTree = "<group>";
+		};
+		2406589A2A59A894000AB645 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2406589B2A59A894000AB645 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		240658A52A59AAA7000AB645 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				240658A82A59ADCD000AB645 /* SignIn.swift */,
+				24C878CA2A5AE156001DA5DF /* SignUp.swift */,
+				24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */,
+				24C878D92A5B1155001DA5DF /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		240658A62A59AAB2000AB645 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24C878D52A5AF3AD001DA5DF /* Authentication.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		240658A72A59AD9B000AB645 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				240658A22A59AA15000AB645 /* LaunchScreen.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		240658902A59A892000AB645 /* PushkaVPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2406589F2A59A894000AB645 /* Build configuration list for PBXNativeTarget "PushkaVPN" */;
+			buildPhases = (
+				2406588D2A59A892000AB645 /* Sources */,
+				2406588E2A59A892000AB645 /* Frameworks */,
+				2406588F2A59A892000AB645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushkaVPN;
+			packageProductDependencies = (
+				24C878D12A5AF2AA001DA5DF /* FirebaseAnalytics */,
+				24C878D32A5AF2AA001DA5DF /* FirebaseAuth */,
+			);
+			productName = PushkaVPN;
+			productReference = 240658912A59A892000AB645 /* PushkaVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		240658892A59A892000AB645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					240658902A59A892000AB645 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2406588C2A59A892000AB645 /* Build configuration list for PBXProject "PushkaVPN" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 240658882A59A892000AB645;
+			packageReferences = (
+				24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 240658922A59A892000AB645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				240658902A59A892000AB645 /* PushkaVPN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2406588F2A59A892000AB645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2406589C2A59A894000AB645 /* Preview Assets.xcassets in Resources */,
+				240658992A59A894000AB645 /* Assets.xcassets in Resources */,
+				24C878CF2A5AF1B7001DA5DF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2406588D2A59A892000AB645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240658952A59A892000AB645 /* PushkaVPNApp.swift in Sources */,
+				24C878DA2A5B1155001DA5DF /* MainView.swift in Sources */,
+				24C878D62A5AF3AD001DA5DF /* Authentication.swift in Sources */,
+				240658A92A59ADCD000AB645 /* SignIn.swift in Sources */,
+				24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */,
+				24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */,
+				240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2406589D2A59A894000AB645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2406589E2A59A894000AB645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		240658A02A59A894000AB645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PushkaVPN/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushkaVPN/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NGK.PushkaVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		240658A12A59A894000AB645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PushkaVPN/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushkaVPN/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NGK.PushkaVPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2406588C2A59A892000AB645 /* Build configuration list for PBXProject "PushkaVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2406589D2A59A894000AB645 /* Debug */,
+				2406589E2A59A894000AB645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2406589F2A59A894000AB645 /* Build configuration list for PBXNativeTarget "PushkaVPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240658A02A59A894000AB645 /* Debug */,
+				240658A12A59A894000AB645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24C878D12A5AF2AA001DA5DF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		24C878D32A5AF2AA001DA5DF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 240658892A59A892000AB645 /* Project object */;
+}
