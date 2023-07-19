@@ -1,10 +1,3 @@
-//
-//  LaunchScreen.swift
-//  PushkaVPN
-//
-//  Created by Slava on 08/07/2023.
-//
-
 import SwiftUI
 
 struct LaunchScreen: View {
@@ -40,9 +33,12 @@ struct LaunchScreen: View {
             
             ZStack
             {
-                MainView(showSignInView: $showSignInView)
-                    .opacity(animate ? 1 : 0)
-                    .animation(.spring().delay(1.5), value: animate)
+                if(!showSignInView)
+                {
+                    MainView(showSignInView: $showSignInView)
+                        .opacity(animate ? 1 : 0)
+                        .animation(.spring().delay(1.5), value: animate)
+                }
             }
             .onAppear{
                 let authUser = try? AuthenticationManger.shared.getAuthenticatedUser()
@@ -52,7 +48,7 @@ struct LaunchScreen: View {
             {
                 SignIn(showSignInView: $showSignInView)
                     .opacity(animate ? 1 : 0)
-                    .animation(.spring().delay(1.5), value: animate)
+                    .animation(.spring().delay(2), value: animate)
             }
         }.animation(.spring())
     }

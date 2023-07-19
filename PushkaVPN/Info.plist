@@ -2,12 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Google SignIn</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.610872093800-7ub0rjusf6n9b81ggsiomqkn0ul12506</string>
+			</array>
+		</dict>
+	</array>
+	<key>GIDClientID</key>
+	<string>610872093800-7ub0rjusf6n9b81ggsiomqkn0ul12506.apps.googleusercontent.com</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
 		<string>Color</string>
 		<key>UIImageName</key>
-		<string>LaunchLogo</string>
+		<string>Logo</string>
 		<key>UILaunchScreen</key>
 		<dict/>
 	</dict>

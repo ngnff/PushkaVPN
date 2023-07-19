@@ -12,13 +12,15 @@
 		2406589C2A59A894000AB645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2406589B2A59A894000AB645 /* Preview Assets.xcassets */; };
 		240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A22A59AA15000AB645 /* LaunchScreen.swift */; };
 		240658A92A59ADCD000AB645 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A82A59ADCD000AB645 /* SignIn.swift */; };
+		24C3B37B2A5FF56F00B1A6CB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */; };
 		24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */; };
 		24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878CA2A5AE156001DA5DF /* SignUp.swift */; };
 		24C878CF2A5AF1B7001DA5DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */; };
-		24C878D22A5AF2AA001DA5DF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 24C878D12A5AF2AA001DA5DF /* FirebaseAnalytics */; };
-		24C878D42A5AF2AA001DA5DF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 24C878D32A5AF2AA001DA5DF /* FirebaseAuth */; };
 		24C878D62A5AF3AD001DA5DF /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878D52A5AF3AD001DA5DF /* Authentication.swift */; };
 		24C878DA2A5B1155001DA5DF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878D92A5B1155001DA5DF /* MainView.swift */; };
+		24CF174E2A5EEAED000ABEEA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 24CF174D2A5EEAED000ABEEA /* FirebaseAuth */; };
+		24CF17512A5EEB2B000ABEEA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 24CF17502A5EEB2B000ABEEA /* GoogleSignIn */; };
+		24CF17532A5EEB2B000ABEEA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 24CF17522A5EEB2B000ABEEA /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,7 @@
 		240658A22A59AA15000AB645 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		240658A82A59ADCD000AB645 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		240658AA2A59B2D0000AB645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLogo.swift; sourceTree = "<group>"; };
 		24C878CA2A5AE156001DA5DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -41,8 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C878D22A5AF2AA001DA5DF /* FirebaseAnalytics in Frameworks */,
-				24C878D42A5AF2AA001DA5DF /* FirebaseAuth in Frameworks */,
+				24CF17532A5EEB2B000ABEEA /* GoogleSignInSwift in Frameworks */,
+				24CF174E2A5EEAED000ABEEA /* FirebaseAuth in Frameworks */,
+				24CF17512A5EEB2B000ABEEA /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +72,10 @@
 		240658932A59A892000AB645 /* PushkaVPN */ = {
 			isa = PBXGroup;
 			children = (
-				240658942A59A892000AB645 /* PushkaVPNApp.swift */,
 				24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */,
 				240658AA2A59B2D0000AB645 /* Info.plist */,
+				240658942A59A892000AB645 /* PushkaVPNApp.swift */,
+				24C3B3792A5FF55100B1A6CB /* Utilities */,
 				240658A72A59AD9B000AB645 /* ViewModel */,
 				240658A62A59AAB2000AB645 /* Model */,
 				240658A52A59AAA7000AB645 /* View */,
@@ -115,6 +120,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		24C3B3792A5FF55100B1A6CB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,8 +145,9 @@
 			);
 			name = PushkaVPN;
 			packageProductDependencies = (
-				24C878D12A5AF2AA001DA5DF /* FirebaseAnalytics */,
-				24C878D32A5AF2AA001DA5DF /* FirebaseAuth */,
+				24CF174D2A5EEAED000ABEEA /* FirebaseAuth */,
+				24CF17502A5EEB2B000ABEEA /* GoogleSignIn */,
+				24CF17522A5EEB2B000ABEEA /* GoogleSignInSwift */,
 			);
 			productName = PushkaVPN;
 			productReference = 240658912A59A892000AB645 /* PushkaVPN.app */;
@@ -164,7 +178,8 @@
 			);
 			mainGroup = 240658882A59A892000AB645;
 			packageReferences = (
-				24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				24CF174C2A5EEAED000ABEEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				24CF174F2A5EEB2B000ABEEA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 240658922A59A892000AB645 /* Products */;
 			projectDirPath = "";
@@ -199,6 +214,7 @@
 				240658A92A59ADCD000AB645 /* SignIn.swift in Sources */,
 				24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */,
 				24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */,
+				24C3B37B2A5FF56F00B1A6CB /* Utilities.swift in Sources */,
 				240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -312,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -330,9 +346,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PushkaVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ZDBVHR74W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PushkaVPN/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushkaVPN;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -358,9 +377,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PushkaVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ZDBVHR74W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PushkaVPN/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushkaVPN;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -402,26 +424,39 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		24CF174C2A5EEAED000ABEEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 10.0.0;
+			};
+		};
+		24CF174F2A5EEB2B000ABEEA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		24C878D12A5AF2AA001DA5DF /* FirebaseAnalytics */ = {
+		24CF174D2A5EEAED000ABEEA /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		24C878D32A5AF2AA001DA5DF /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 24C878D02A5AF2AA001DA5DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 24CF174C2A5EEAED000ABEEA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		24CF17502A5EEB2B000ABEEA /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24CF174F2A5EEB2B000ABEEA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		24CF17522A5EEB2B000ABEEA /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24CF174F2A5EEB2B000ABEEA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

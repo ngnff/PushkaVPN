@@ -4,6 +4,8 @@ struct SignIn: View {
     
     @StateObject private var viewModel = SignInEmail()
     
+    @StateObject private var viewModelGA = AuthenticationViewModel()
+    
     @State private var errorMessage: String = ""
     
     @State private var registrationMode = false
@@ -90,7 +92,18 @@ struct SignIn: View {
                     HStack{
                         Button(action:
                                 {
-                            return
+                            Task
+                            {
+                                do
+                                {
+                                    try await viewModelGA.SignInGoogle()
+                                    showSignInView.toggle()
+                                }
+                                catch
+                                {
+                                    errorMessage = "Ошибка"
+                                }
+                            }
                         })
                         {
                             ZStack
@@ -115,7 +128,17 @@ struct SignIn: View {
                         
                         Button(action:
                                 {
-                            return
+                            Task
+                            {
+                                do
+                                {
+                                    try await viewModelGA.SignInApple()
+                                }
+                                catch
+                                {
+                                    errorMessage = "Ошибка"
+                                }
+                            }
                         })
                         {
                             ZStack
@@ -138,6 +161,13 @@ struct SignIn: View {
                                         .bold()
                                         .padding(.trailing)
                                 }
+                            }
+                        }
+                        .onChange(of: viewModelGA.didSignInWithApple)
+                        { newValue in
+                            if newValue
+                            {
+                                showSignInView = false
                             }
                         }
                     }.padding(.top)

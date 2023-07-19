@@ -1,10 +1,3 @@
-//
-//  HeadLogo.swift
-//  PushkaVPN
-//
-//  Created by Slava on 09/07/2023.
-//
-
 import SwiftUI
 
 struct HeadLogo: View {

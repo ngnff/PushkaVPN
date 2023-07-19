@@ -1,10 +1,3 @@
-//
-//  SignUp.swift
-//  PushkaVPN
-//
-//  Created by Slava on 09/07/2023.
-//
-
 import SwiftUI
 
 struct SignUp: View {
@@ -21,7 +14,7 @@ struct SignUp: View {
             Color.black
                 .ignoresSafeArea()
             
-            VStack(alignment: .leading)
+            VStack
             {
                 HeadLogo()
                 
@@ -104,6 +97,14 @@ struct SignUp: View {
                 }
                 
                 Spacer()
+                
+                Button(action: {
+                    showSignUpView.toggle()
+                })
+                {
+                    Text("Уже есть аккаунт")
+                        .foregroundColor(.white)
+                }
             }.padding()
         }.animation(.spring())
     }
