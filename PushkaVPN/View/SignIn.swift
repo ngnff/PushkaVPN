@@ -89,7 +89,52 @@ struct SignIn: View {
                         }
                     }
                     
-                    HStack{
+                    VStack{
+                        Button(action:
+                                {
+                            Task
+                            {
+                                do
+                                {
+                                    try await viewModelGA.SignInApple()
+                                }
+                                catch
+                                {
+                                    errorMessage = "Ошибка"
+                                }
+                            }
+                        })
+                        {
+                            ZStack
+                            {
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(.white)
+                                    .frame(width: nil, height: 65)
+                                
+                                HStack
+                                {
+                                    Image(systemName: "applelogo")
+                                        .resizable()
+                                        .padding(.trailing)
+                                        .foregroundColor(.black)
+                                        .frame(width: 40, height: 30)
+                                    
+                                    Text("Sign in with Apple")
+                                        .font(.callout)
+                                        .foregroundColor(.black)
+                                        .bold()
+                                        .padding(.trailing)
+                                }
+                            }
+                        }
+                        .onChange(of: viewModelGA.didSignInWithApple)
+                        { newValue in
+                            if newValue
+                            {
+                                showSignInView = false
+                            }
+                        }
+                        
                         Button(action:
                                 {
                             Task
@@ -117,60 +162,15 @@ struct SignIn: View {
                                     Image("search 2")
                                         .padding(.trailing)
                                     
-                                    Text("Google")
-                                        .foregroundColor(.gray)
-                                        .font(.title)
+                                    Text("Sign in with Google")
+                                        .foregroundColor(.black)
+                                        .font(.callout)
                                         .bold()
                                         .padding(.trailing)
                                 }
                             }
                         }
-                        
-                        Button(action:
-                                {
-                            Task
-                            {
-                                do
-                                {
-                                    try await viewModelGA.SignInApple()
-                                }
-                                catch
-                                {
-                                    errorMessage = "Ошибка"
-                                }
-                            }
-                        })
-                        {
-                            ZStack
-                            {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.gray)
-                                    .frame(width: nil, height: 65)
-                                
-                                HStack
-                                {
-                                    Image(systemName: "applelogo")
-                                        .resizable()
-                                        .padding(.trailing)
-                                        .foregroundColor(.white)
-                                        .frame(width: 40, height: 30)
-                                    
-                                    Text("Apple")
-                                        .foregroundColor(.white)
-                                        .font(.title)
-                                        .bold()
-                                        .padding(.trailing)
-                                }
-                            }
-                        }
-                        .onChange(of: viewModelGA.didSignInWithApple)
-                        { newValue in
-                            if newValue
-                            {
-                                showSignInView = false
-                            }
-                        }
-                    }.padding(.top)
+                    }
                 }
                 
                 Spacer()

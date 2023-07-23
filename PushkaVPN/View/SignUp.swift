@@ -8,6 +8,8 @@ struct SignUp: View {
     
     @Binding var showSignUpView: Bool
     
+    @State private var showSignUpAlert: Bool = false
+    
     var body: some View {
         ZStack
         {
@@ -64,7 +66,6 @@ struct SignUp: View {
                     }
                     .opacity(self.viewModel.password != "" && self.viewModel.email != "" ? 1 : 0)
                     .animation(.easeIn)
-                    
                 }
                 
                 Spacer()
@@ -76,7 +77,7 @@ struct SignUp: View {
                         errorMessage = try await viewModel.SignUpWithEmail()
                         if(errorMessage == "Успешно")
                         {
-                            showSignUpView.toggle()
+                            showSignUpAlert = true
                         }
                     }
                 })
@@ -95,6 +96,13 @@ struct SignUp: View {
                             .bold()
                     }
                 }
+                .alert("Успех!", isPresented: $showSignUpAlert, actions: {
+                    Button("Ок"){
+                        showSignUpView.toggle()
+                    }
+                }, message: {
+                    Text("Письмо с подтверждением отправлено на почту.")
+                })
                 
                 Spacer()
                 

@@ -5,6 +5,30 @@ import GoogleSignInSwift
 import AuthenticationServices
 import CryptoKit
 
+@MainActor
+final class MainViewModel: ObservableObject
+{
+    @Published var authProviders: [AuthProviderOption] = []
+    
+    func DeleteCurrentUser() throws
+    {
+        try AuthenticationManger.shared.DeleteUser()
+    }
+    
+    func loadAuthProviders()
+    {
+        if let providers = try? AuthenticationManger.shared.GetProvider()
+        {
+            authProviders = providers
+        }
+    }
+    
+    func logOut() throws
+    {
+        try AuthenticationManger.shared.logOut()
+    }
+}
+
 struct GoogleSignInResultModel
 {
     let idToken: String
@@ -297,6 +321,12 @@ final class AuthenticationManger
         }
         
         return providers
+    }
+    
+    func DeleteUser() throws
+    {
+        let user = Auth.auth().currentUser
+        user?.delete()
     }
 }
 

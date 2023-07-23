@@ -12,6 +12,13 @@
 		2406589C2A59A894000AB645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2406589B2A59A894000AB645 /* Preview Assets.xcassets */; };
 		240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A22A59AA15000AB645 /* LaunchScreen.swift */; };
 		240658A92A59ADCD000AB645 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A82A59ADCD000AB645 /* SignIn.swift */; };
+		243784752A6D6BFB003CA0EE /* SubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243784742A6D6BFB003CA0EE /* SubscribeView.swift */; };
+		243784772A6D6EAD003CA0EE /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243784762A6D6EAD003CA0EE /* HelpView.swift */; };
+		247BDDE22A67FD4D00632FE1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDE12A67FD4D00632FE1 /* HomeView.swift */; };
+		247BDDE42A67FD6F00632FE1 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDE32A67FD6F00632FE1 /* PersonView.swift */; };
+		247BDDE62A67FD7D00632FE1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDE52A67FD7D00632FE1 /* SettingsView.swift */; };
+		247BDDEA2A697CA600632FE1 /* JoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDE92A697CA600632FE1 /* JoinButton.swift */; };
+		247BDDEC2A69881400632FE1 /* WireGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDEB2A69881400632FE1 /* WireGuard.swift */; };
 		24C3B37B2A5FF56F00B1A6CB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */; };
 		24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */; };
 		24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878CA2A5AE156001DA5DF /* SignUp.swift */; };
@@ -31,6 +38,13 @@
 		240658A22A59AA15000AB645 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		240658A82A59ADCD000AB645 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		240658AA2A59B2D0000AB645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		243784742A6D6BFB003CA0EE /* SubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeView.swift; sourceTree = "<group>"; };
+		243784762A6D6EAD003CA0EE /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		247BDDE12A67FD4D00632FE1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		247BDDE32A67FD6F00632FE1 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		247BDDE52A67FD7D00632FE1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		247BDDE92A697CA600632FE1 /* JoinButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinButton.swift; sourceTree = "<group>"; };
+		247BDDEB2A69881400632FE1 /* WireGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuard.swift; sourceTree = "<group>"; };
 		24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLogo.swift; sourceTree = "<group>"; };
 		24C878CA2A5AE156001DA5DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
@@ -99,7 +113,12 @@
 				240658A82A59ADCD000AB645 /* SignIn.swift */,
 				24C878CA2A5AE156001DA5DF /* SignUp.swift */,
 				24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */,
-				24C878D92A5B1155001DA5DF /* MainView.swift */,
+				247BDDE12A67FD4D00632FE1 /* HomeView.swift */,
+				247BDDE32A67FD6F00632FE1 /* PersonView.swift */,
+				247BDDE52A67FD7D00632FE1 /* SettingsView.swift */,
+				247BDDE92A697CA600632FE1 /* JoinButton.swift */,
+				243784742A6D6BFB003CA0EE /* SubscribeView.swift */,
+				243784762A6D6EAD003CA0EE /* HelpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				24C878D52A5AF3AD001DA5DF /* Authentication.swift */,
+				247BDDEB2A69881400632FE1 /* WireGuard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +135,7 @@
 		240658A72A59AD9B000AB645 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				24C878D92A5B1155001DA5DF /* MainView.swift */,
 				240658A22A59AA15000AB645 /* LaunchScreen.swift */,
 			);
 			path = ViewModel;
@@ -208,14 +229,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247BDDE22A67FD4D00632FE1 /* HomeView.swift in Sources */,
+				243784752A6D6BFB003CA0EE /* SubscribeView.swift in Sources */,
 				240658952A59A892000AB645 /* PushkaVPNApp.swift in Sources */,
 				24C878DA2A5B1155001DA5DF /* MainView.swift in Sources */,
+				247BDDEA2A697CA600632FE1 /* JoinButton.swift in Sources */,
 				24C878D62A5AF3AD001DA5DF /* Authentication.swift in Sources */,
 				240658A92A59ADCD000AB645 /* SignIn.swift in Sources */,
+				247BDDE42A67FD6F00632FE1 /* PersonView.swift in Sources */,
 				24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */,
 				24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */,
 				24C3B37B2A5FF56F00B1A6CB /* Utilities.swift in Sources */,
 				240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */,
+				247BDDEC2A69881400632FE1 /* WireGuard.swift in Sources */,
+				243784772A6D6EAD003CA0EE /* HelpView.swift in Sources */,
+				247BDDE62A67FD7D00632FE1 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +384,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +416,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

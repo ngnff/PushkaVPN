@@ -16,7 +16,7 @@ struct PushkaVPNApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LaunchScreen()
+            LaunchScreen().environment(\.colorScheme, .dark)
         }
     }
 }
