@@ -21,8 +21,6 @@
 	<dict>
 		<key>UIColorName</key>
 		<string>Color</string>
-		<key>UIImageName</key>
-		<string>Logo</string>
 		<key>UILaunchScreen</key>
 		<dict/>
 	</dict>

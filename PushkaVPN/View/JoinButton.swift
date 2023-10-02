@@ -6,6 +6,10 @@ struct JoinButton: View {
     var body: some View {
         Button(action: {
             ButtonOn.toggle()
+            if(ButtonOn)
+            {
+                
+            }
         })
         {
             if(!ButtonOn)

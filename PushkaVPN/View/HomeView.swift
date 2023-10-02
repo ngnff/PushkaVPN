@@ -31,7 +31,7 @@ struct HomeView: View {
                 }
                 
                 NavigationLink(destination: {
-                    
+                    Location()
                 })
                 {
                     Rectangle()
