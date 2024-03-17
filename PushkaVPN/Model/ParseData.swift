@@ -1,4 +1,7 @@
 import Foundation
+import WireGuardKit
+import WireGuardKitC
+import WireGuardKitGo
 
 struct configure
 {

@@ -12,6 +12,8 @@
 		2406589C2A59A894000AB645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2406589B2A59A894000AB645 /* Preview Assets.xcassets */; };
 		240658A32A59AA15000AB645 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A22A59AA15000AB645 /* LaunchScreen.swift */; };
 		240658A92A59ADCD000AB645 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240658A82A59ADCD000AB645 /* SignIn.swift */; };
+		240C600D2B93E8A5004169C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 240C600C2B93E8A5004169C5 /* GoogleService-Info.plist */; };
+		241DE18E2ACC136D00B4C157 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 241DE18D2ACC136D00B4C157 /* WireGuardKit */; };
 		243784752A6D6BFB003CA0EE /* SubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243784742A6D6BFB003CA0EE /* SubscribeView.swift */; };
 		243784772A6D6EAD003CA0EE /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243784762A6D6EAD003CA0EE /* HelpView.swift */; };
 		243DC2792AAFD116004DB8D7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243DC2782AAFD116004DB8D7 /* APIManager.swift */; };
@@ -49,16 +51,24 @@
 		247BDDE62A67FD7D00632FE1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDE52A67FD7D00632FE1 /* SettingsView.swift */; };
 		247BDDEA2A697CA600632FE1 /* JoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDE92A697CA600632FE1 /* JoinButton.swift */; };
 		247BDDEC2A69881400632FE1 /* WireGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247BDDEB2A69881400632FE1 /* WireGuard.swift */; };
-		24A1061B2AB8EFBC00E7088B /* PIAWireguard in Frameworks */ = {isa = PBXBuildFile; productRef = 24A1061A2AB8EFBC00E7088B /* PIAWireguard */; };
 		24C3B37B2A5FF56F00B1A6CB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */; };
 		24C878C92A5ABEF0001DA5DF /* HeadLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */; };
 		24C878CB2A5AE156001DA5DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878CA2A5AE156001DA5DF /* SignUp.swift */; };
-		24C878CF2A5AF1B7001DA5DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */; };
 		24C878D62A5AF3AD001DA5DF /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878D52A5AF3AD001DA5DF /* Authentication.swift */; };
 		24C878DA2A5B1155001DA5DF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C878D92A5B1155001DA5DF /* MainView.swift */; };
 		24CF17512A5EEB2B000ABEEA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 24CF17502A5EEB2B000ABEEA /* GoogleSignIn */; };
 		24CF17532A5EEB2B000ABEEA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 24CF17522A5EEB2B000ABEEA /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		241DE18B2ACC136100B4C157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240658892A59A892000AB645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 241DE1872ACC131C00B4C157;
+			remoteInfo = WireGuardGoBridgeiOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		240658912A59A892000AB645 /* PushkaVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushkaVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +78,8 @@
 		240658A22A59AA15000AB645 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		240658A82A59ADCD000AB645 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		240658AA2A59B2D0000AB645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		240C600C2B93E8A5004169C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		241DE1862ACC0C8200B4C157 /* wireguard-apple */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "wireguard-apple"; path = "../wireguard-apple"; sourceTree = "<group>"; };
 		243784742A6D6BFB003CA0EE /* SubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeView.swift; sourceTree = "<group>"; };
 		243784762A6D6EAD003CA0EE /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		243DC2782AAFD116004DB8D7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -81,7 +93,6 @@
 		24C3B37A2A5FF56F00B1A6CB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		24C878C82A5ABEF0001DA5DF /* HeadLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadLogo.swift; sourceTree = "<group>"; };
 		24C878CA2A5AE156001DA5DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
-		24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24C878D52A5AF3AD001DA5DF /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		24C878D92A5B1155001DA5DF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,8 +109,8 @@
 				243DC2842AAFD89F004DB8D7 /* FirebaseAppCheck in Frameworks */,
 				243DC29C2AAFD89F004DB8D7 /* FirebaseFunctionsCombine-Community in Frameworks */,
 				243DC2A22AAFD89F004DB8D7 /* FirebaseInstallations in Frameworks */,
-				24A1061B2AB8EFBC00E7088B /* PIAWireguard in Frameworks */,
 				243DC2A62AAFD89F004DB8D7 /* FirebaseMessaging in Frameworks */,
+				241DE18E2ACC136D00B4C157 /* WireGuardKit in Frameworks */,
 				243DC2882AAFD89F004DB8D7 /* FirebaseAuth in Frameworks */,
 				243DC2AA2AAFD89F004DB8D7 /* FirebaseRemoteConfig in Frameworks */,
 				243DC2802AAFD89F004DB8D7 /* FirebaseAnalyticsSwift in Frameworks */,
@@ -130,6 +141,7 @@
 		240658882A59A892000AB645 = {
 			isa = PBXGroup;
 			children = (
+				241DE1852ACC0C8200B4C157 /* Packages */,
 				240658932A59A892000AB645 /* PushkaVPN */,
 				240658922A59A892000AB645 /* Products */,
 				245CACC42A9F4B3700DE7014 /* Frameworks */,
@@ -147,7 +159,7 @@
 		240658932A59A892000AB645 /* PushkaVPN */ = {
 			isa = PBXGroup;
 			children = (
-				24C878CE2A5AF1B7001DA5DF /* GoogleService-Info.plist */,
+				240C600C2B93E8A5004169C5 /* GoogleService-Info.plist */,
 				240658AA2A59B2D0000AB645 /* Info.plist */,
 				240658942A59A892000AB645 /* PushkaVPNApp.swift */,
 				24C3B3792A5FF55100B1A6CB /* Utilities */,
@@ -205,6 +217,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		241DE1852ACC0C8200B4C157 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				241DE1862ACC0C8200B4C157 /* wireguard-apple */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		245CACC42A9F4B3700DE7014 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +242,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		241DE1872ACC131C00B4C157 /* WireGuardGoBridgeiOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 241DE1882ACC131C00B4C157 /* Build configuration list for PBXLegacyTarget "WireGuardGoBridgeiOS" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/mak/Documents/GitHub/wireguard-apple/Sources/WireGuardKitGo";
+			dependencies = (
+			);
+			name = WireGuardGoBridgeiOS;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireGuardGoBridgeiOS;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		240658902A59A892000AB645 /* PushkaVPN */ = {
 			isa = PBXNativeTarget;
@@ -234,6 +271,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				241DE18C2ACC136100B4C157 /* PBXTargetDependency */,
 			);
 			name = PushkaVPN;
 			packageProductDependencies = (
@@ -266,7 +304,7 @@
 				243DC2AB2AAFD89F004DB8D7 /* FirebaseRemoteConfigSwift */,
 				243DC2AD2AAFD89F004DB8D7 /* FirebaseStorage */,
 				243DC2AF2AAFD89F004DB8D7 /* FirebaseStorageCombine-Community */,
-				24A1061A2AB8EFBC00E7088B /* PIAWireguard */,
+				241DE18D2ACC136D00B4C157 /* WireGuardKit */,
 			);
 			productName = PushkaVPN;
 			productReference = 240658912A59A892000AB645 /* PushkaVPN.app */;
@@ -285,6 +323,9 @@
 					240658902A59A892000AB645 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					241DE1872ACC131C00B4C157 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 2406588C2A59A892000AB645 /* Build configuration list for PBXProject "PushkaVPN" */;
@@ -300,13 +341,13 @@
 			packageReferences = (
 				24CF174F2A5EEB2B000ABEEA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				243DC27A2AAFD89F004DB8D7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				24A106192AB8EFBC00E7088B /* XCRemoteSwiftPackageReference "ios-wireguard" */,
 			);
 			productRefGroup = 240658922A59A892000AB645 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				240658902A59A892000AB645 /* PushkaVPN */,
+				241DE1872ACC131C00B4C157 /* WireGuardGoBridgeiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +359,7 @@
 			files = (
 				2406589C2A59A894000AB645 /* Preview Assets.xcassets in Resources */,
 				240658992A59A894000AB645 /* Assets.xcassets in Resources */,
-				24C878CF2A5AF1B7001DA5DF /* GoogleService-Info.plist in Resources */,
+				240C600D2B93E8A5004169C5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +392,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		241DE18C2ACC136100B4C157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 241DE1872ACC131C00B4C157 /* WireGuardGoBridgeiOS */;
+			targetProxy = 241DE18B2ACC136100B4C157 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2406589D2A59A894000AB645 /* Debug */ = {
@@ -493,7 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NGK.PushkaVPN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Pushka.PushkaVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -525,11 +574,40 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NGK.PushkaVPN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Pushka.PushkaVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		241DE1892ACC131C00B4C157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = ":/usr/local/go/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		241DE18A2ACC131C00B4C157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = ":/usr/local/go/bin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -554,6 +632,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		241DE1882ACC131C00B4C157 /* Build configuration list for PBXLegacyTarget "WireGuardGoBridgeiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241DE1892ACC131C00B4C157 /* Debug */,
+				241DE18A2ACC131C00B4C157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -563,14 +650,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.0.0;
-			};
-		};
-		24A106192AB8EFBC00E7088B /* XCRemoteSwiftPackageReference "ios-wireguard" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pia-foss/ios-wireguard";
-			requirement = {
-				branch = master;
-				kind = branch;
 			};
 		};
 		24CF174F2A5EEB2B000ABEEA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
@@ -584,6 +663,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		241DE18D2ACC136D00B4C157 /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WireGuardKit;
+		};
 		243DC27B2AAFD89F004DB8D7 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 243DC27A2AAFD89F004DB8D7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -718,11 +801,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 243DC27A2AAFD89F004DB8D7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
-		};
-		24A1061A2AB8EFBC00E7088B /* PIAWireguard */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 24A106192AB8EFBC00E7088B /* XCRemoteSwiftPackageReference "ios-wireguard" */;
-			productName = PIAWireguard;
 		};
 		24CF17502A5EEB2B000ABEEA /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
