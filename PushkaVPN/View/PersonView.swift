@@ -32,12 +32,16 @@ struct PersonView: View {
                             Circle()
                                 .frame(width: 79, height: 79)
                                 .foregroundColor(.white)
-                            VStack
-                            {
-                                Text("\(countOfDay)")
-                                Text("дней")
-                            }.fontWeight(.bold)
-                                .foregroundColor(.black)
+                            if #available(iOS 16.0, *) {
+                                VStack
+                                {
+                                    Text("\(countOfDay)")
+                                    Text("дней")
+                                }.fontWeight(.bold)
+                                    .foregroundColor(.black)
+                            } else {
+                                // Fallback on earlier versions
+                            }
                         }
                         
                         Text("Продлите подписку, чтобы иметь больше возможностей!")

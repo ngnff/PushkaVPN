@@ -4,6 +4,7 @@ import GoogleSignIn
 import GoogleSignInSwift
 import AuthenticationServices
 import CryptoKit
+import FirebaseDatabase
 
 @MainActor
 final class MainViewModel: ObservableObject
@@ -197,6 +198,8 @@ final class SignInEmail: ObservableObject
     
     @Published var passwordConfirm = ""
     
+    @Published var subscription = 0
+    
     func SignUpWithEmail() async throws -> String
     {
         guard !email.isEmpty, !password.isEmpty else
@@ -212,6 +215,8 @@ final class SignInEmail: ObservableObject
         do
         {
             try await AuthenticationManger.shared.createUser(email: email, password: password)
+            
+            
         }
         catch
         {
@@ -339,6 +344,7 @@ extension AuthenticationManger
     {
         let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
         try await authDataResult.user.sendEmailVerification()
+        try await saveUserUID(uid: authDataResult.user.uid)
         return AuthDataResultModel(user: authDataResult.user)
     }
     
@@ -347,6 +353,18 @@ extension AuthenticationManger
     {
         let authDataResult = try await Auth.auth().signIn(withEmail: email, password: password)
         return AuthDataResultModel(user: authDataResult.user)
+    }
+    
+    func saveUserUID(uid: String) async throws {
+        let databaseRef = Database.database().reference()
+        let usersRef = databaseRef.child("users")
+        
+        do {
+            try await usersRef.child(uid).setValue(["subsctiption": 0])
+        } catch {
+            print("Ошибка при сохранении UID пользователя: \(error)")
+            throw error
+        }
     }
 }
 
@@ -371,6 +389,7 @@ extension AuthenticationManger
     func SignIn(credential: AuthCredential) async throws -> AuthDataResultModel
     {
         let authDataResult = try await Auth.auth().signIn(with: credential)
+        try await saveUserUID(uid: authDataResult.user.uid)
         return AuthDataResultModel(user: authDataResult.user)
     }
 }

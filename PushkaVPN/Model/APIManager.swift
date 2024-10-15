@@ -28,6 +28,8 @@ class APIManager
         })
     }
     
+    
+    
     func getPost(collection: String, completion: @escaping (confSettings?) -> Void)
     {
         let db = configureFB()
